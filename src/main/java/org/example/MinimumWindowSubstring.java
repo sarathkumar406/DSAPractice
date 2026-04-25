@@ -9,7 +9,8 @@ public class MinimumWindowSubstring {
 
         String s = "ADOBECODEBANC", t = "ABC";
 
-        minimumWindowSubString(s, t);
+        String res  = minimumWindowSubString(s, t);
+        System.out.println(res);
     }
 
     private static String minimumWindowSubString(String s, String t) {
@@ -57,9 +58,10 @@ public class MinimumWindowSubstring {
                 }
             }
 
-            return minLength == Integer.MAX_VALUE ? "" : s.substring(start, start + minLength);
+
 
 
         }
+        return minLength == Integer.MAX_VALUE ? "" : s.substring(start, start + minLength);
     }
 }
