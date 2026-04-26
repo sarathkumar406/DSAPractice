@@ -9,7 +9,7 @@ public class ReverseList {
         head.next.next = new ListNode(3);
 
         ReverseList reverseList = new ReverseList();
-        ListNode node = reverseList.reveserList(head);
+        ListNode node = reverseList.reveseList(head);
 
         while(node!=null){
             System.out.print(node.val+ " ");
@@ -17,7 +17,7 @@ public class ReverseList {
         }
     }
 
-    private ListNode reveserList(ListNode head) {
+    private ListNode reveseList(ListNode head) {
 
         ListNode prev = null;
         ListNode curr = head;
